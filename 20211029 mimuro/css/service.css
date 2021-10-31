@@ -188,6 +188,32 @@ a:hover {
   flex-direction: column;
   font-size: 12px;
 }
+@media screen and (max-width : 768px){
+  .service-wrap {
+    width: 90%;
+    height: auto;
+  }
+  .service-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .service-item img {
+    margin-bottom: 20px;
+  }
+  .education-content,
+.coaching-content,
+.consal-content,
+.DX-content {
+  width: 100%;
+  margin-left: 0;
+  font-size: 16px;
+}
+.DX-content {
+  margin-bottom: 20px;
+}
+}
 /*お問い合わせ*/
 .contact {
   width: 100%;
