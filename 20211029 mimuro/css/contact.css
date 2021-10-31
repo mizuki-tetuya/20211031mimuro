@@ -1,0 +1,246 @@
+body {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  height: 70px;
+    box-sizing: border-box;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.header-nav {
+  width: 100%;
+}
+.header-nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width : 768px){
+/*ドロワーメニュー*/
+.header-nav-item {
+  text-decoration: none;
+  color: blue;
+  padding: 30px 0;
+  font-weight: 400;
+}
+.header-nav{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: -100%;
+  top: 0;
+  background: #eee;
+  transition: .7s;
+}
+.header-nav-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu {
+  display: inline-block;
+  width: 36px;
+  height: 32px;
+  cursor: pointer;
+  position: relative;
+  left: -25px;
+  top: 0px;
+}
+.menu__line--top,
+.menu__line--middle,
+.menu__line--bottom {
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  transition: 0.5s;
+}
+.menu__line--top {
+  top: 0;
+}
+.menu__line--middle {
+  top: 14px;
+}
+.menu__line--bottom {
+  bottom: 0;
+}
+.menu.open span:nth-of-type(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+.menu.open span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu.open span:nth-of-type(3) {
+  top: 14px;
+  transform: rotate(-45deg);
+}
+.in {
+  transform: translateX(100%);
+}
+}
+.header-ttl {
+  width: 100px;
+}
+
+.header-ttl img {
+  width: 100%;
+}
+.header-ttl img:hover {
+  opacity: 0.7;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+.header-nav-list li a {
+  color: black;
+}
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.header-nav-list li {
+  color: black;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+/*写真*/
+.future-card {
+  width: 100%;
+  height: 200px;
+  margin-top: 60px;
+  background-image: url(../img/mv.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 60px;
+}
+.future-card-ttl {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*フォーム*/
+.contact {
+  width: 80%;
+  margin: auto;
+}
+@media screen and (max-width : 768px){
+  .contact {
+    width: 90%;
+  }
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+label span {
+  color: red;
+}
+.form-company-name {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.form-name {
+  display: flex;
+  flex-direction: column;
+}
+.form-email {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  text-decoration: none;
+}
+.submit-form {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.submit {
+  width: 300px;
+  background-color: black;
+  color: white;
+  padding: 5px 0;
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-size: 14px;
+}
+/*フッター*/
+.footer {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  box-sizing: border-box;
+  padding: 0 50px 0 50px;
+}
+.nav {
+  display: flex;
+}
+.footer-nav-item:not(:last-child) {
+  border-right: 1px solid white;
+  margin-right: 10px;
+  padding-right: 5px;
+}
+.footer-nav-item a {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-nav-item {
+    padding: 10px 0;
+  }
+  .footer-nav-item:not(:last-child) {
+  border-right: none;
+  }
+}
